@@ -7,7 +7,6 @@ const cookieParser = require("cookie-parser");
 const app = express();
 let ejs = require('ejs');
 app.set('view engine', 'ejs');
-const { body, validationResult } = require('express-validator');
 
 /*==========================middle-wares=======================================================*/
 require('dotenv').config();
