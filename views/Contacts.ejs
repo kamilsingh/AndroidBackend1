@@ -1,0 +1,23 @@
+<html>
+<body>
+    <% const result=JSON.parse(JSON.stringify(data)) %>
+     <h3 style="text-align: center;"> Contacts </h3>
+    <div style="display:flex;flex-direction:column;justify-content:center;align-items: center;font-size: 20px;"> 
+    <% for(let i=0;i<result.length;i++) { %>   
+    <div>--------------------------------------------------------------------------------------------</div>
+    <div style="text-align: center;">
+    <div height="20px" width="100%">  </div>
+   
+    <div> <span> <b>Name :</b> </span> <span> <%= result[i].Name %> </span> </div>
+    <div> <span><b> Mobile :</b> </span> <span><%= result[i].Phone %> </span> </div>
+  </div>
+    <% } %> 
+    <div>--------------------------------------------------------------------------------------------</div>
+
+   </div>
+    </div>
+</body>
+<script>
+   
+</script>
+</html>
